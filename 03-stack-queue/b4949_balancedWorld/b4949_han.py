@@ -26,6 +26,7 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+
 # 텍스트 입력 받기
 text = input()
 
