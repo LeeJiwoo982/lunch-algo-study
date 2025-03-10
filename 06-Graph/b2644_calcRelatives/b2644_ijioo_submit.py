@@ -1,6 +1,6 @@
 from collections import deque
 # import sys
-# sys.stdin = open('input.txt', 'r')
+# sys.stdin = open('input1.txt', 'r')
 # 촌수계산
 def evaluate_relative(X, Y, n):  # 현재사람번호, 인간수
     '''bfs로 최단 촌수 구하기'''

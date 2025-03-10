@@ -85,7 +85,7 @@ print(max_del_wall)
 
 # from collections import deque
 # import sys
-# sys.stdin = open("input.txt", "r")
+# sys.stdin = open("input1.txt", "r")
 #
 # def bfs(r, c):
 #     global group_num, visited, arr, N, M
