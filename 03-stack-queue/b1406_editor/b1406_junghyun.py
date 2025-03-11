@@ -13,26 +13,26 @@ sys.stdin = open("input1.txt", "r")
 # 시간 초과가 나는 이유: insert
 # insert에서 위치를 지정해주면서 해당 위치만큼 for문을 돌게 된다.
 #
-# arr = list(input())
-# M = int(input())
-# cursor = len(arr)
-# for _ in range(M):
-#     mode = list(input().split())
-#     if mode[0] == 'L':
-#         if cursor > 0:
-#             cursor -= 1
-#     elif mode[0] == 'D':
-#         if cursor < len(arr):
-#             cursor+=1
-#     elif mode[0] == 'B':
-#         if cursor > 0:
-#             arr.remove(arr[cursor - 1])
-#             cursor -= 1
-#     else:
-#         arr.insert(cursor, mode[1])
-#         cursor += 1
-#
-# print(''.join(arr))
+arr = list(input())
+M = int(input())
+cursor = len(arr)
+for _ in range(M):
+    mode = list(input().split())
+    if mode[0] == 'L':
+        if cursor > 0:
+            cursor -= 1
+    elif mode[0] == 'D':
+        if cursor < len(arr):
+            cursor+=1
+    elif mode[0] == 'B':
+        if cursor > 0:
+            arr.remove(arr[cursor - 1])
+            cursor -= 1
+    else:
+        arr.insert(cursor, mode[1])
+        cursor += 1
+
+print(''.join(arr))
 
 
 # arr1과 arr2를 만들고,
@@ -86,22 +86,22 @@ for _ in range(int(sys.stdin.readline())):
 # arr_left.extend(reversed(arr_right))
 print(''.join(left + list(reversed(right))))
 
-# import sys
-#
-# stack_l = list(input())
-# stack_r = []
-# n = int(input())
-#
-# for i in range(n):
-#     command = sys.stdin.readline().split()
-#
-#     if command[0] == "L" and stack_l:
-#         stack_r.append(stack_l.pop())
-#     elif command[0] == "D" and stack_r:
-#         stack_l.append(stack_r.pop())
-#     elif command[0] == "B" and stack_l:
-#         stack_l.pop()
-#     elif command[0] == "P":
-#         stack_l.append(command[1])
-#
-# print("".join(stack_l + list(reversed(stack_r))))
+import sys
+
+stack_l = list(input())
+stack_r = []
+n = int(input())
+
+for i in range(n):
+    command = sys.stdin.readline().split()
+
+    if command[0] == "L" and stack_l:
+        stack_r.append(stack_l.pop())
+    elif command[0] == "D" and stack_r:
+        stack_l.append(stack_r.pop())
+    elif command[0] == "B" and stack_l:
+        stack_l.pop()
+    elif command[0] == "P":
+        stack_l.append(command[1])
+
+print("".join(stack_l + list(reversed(stack_r))))
