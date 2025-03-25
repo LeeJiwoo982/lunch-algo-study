@@ -5,6 +5,7 @@ sys.stdin = open("input.txt", "r")
 
 
 def find_position():
+    '''집과 치킨의 위치를 구한다.'''
     global N, arr, houses, chicken
     for i in range(N):
         for j in range(N):
@@ -15,6 +16,7 @@ def find_position():
 
 
 def find_distance(selected_chicken):
+    '''치킨 거리 구하기'''
     global chicken
     distance = 0
     selected_idx = []
@@ -34,6 +36,7 @@ def find_distance(selected_chicken):
 
 
 def chicken_distance(chicken_idx, selected, num):
+    '''치킨선택'''
     global N, M, min_distance
     if num == M:
         distance = find_distance(selected)
