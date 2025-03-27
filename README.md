@@ -1,10 +1,4 @@
 # lunch-algo-study
-## 3월 활동사진
-![B382AF50-A48B-4CAF-90BA-C9932DCB008F](https://github.com/user-attachments/assets/61aee8a7-bfd4-4860-aa5d-06b1e251f3e0)
-![2D6D9691-E6AC-44A2-A856-9B5D6FEA3242](https://github.com/user-attachments/assets/8d74cda8-beab-4426-a1b6-7ea71a4b7993)
-![416BF4E4-5816-4616-B6AB-5AA659B07209](https://github.com/user-attachments/assets/e98cfbb6-0a30-4e2d-a76b-3b6edf4f1cba)
-![6E4D10BA-CD72-4C50-8A13-36E6B2C42B30](https://github.com/user-attachments/assets/bc777ed6-d6b3-4a7f-8036-7b8a0dc3328e)
-
 
 > ## 파일명 규칙
 > 01_ijioo_0323_1234.py
